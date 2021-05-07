@@ -14,7 +14,7 @@ var Environment;
 start.onclick = function () {
 
     clearInterval(Environment);
-    Environment = setInterval(startCount, 300);
+    Environment = setInterval(startCount, 1000);
 
 }
 
