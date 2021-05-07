@@ -2,39 +2,21 @@
 var cnt = 0;
 var count = document.querySelector('h1');
 
-var start = document.querySelector(".start");
+var inc = document.querySelector(".inc");
 
-var stop = document.querySelector(".stop");
-
-var reset = document.querySelector(".reset");
-
-var Environment;
+var dec = document.querySelector(".dec");
 
 
-start.onclick = function () {
 
-    clearInterval(Environment);
-    Environment = setInterval(startCount, 1000);
+inc.onclick = function () {
+cnt++;
+count.innerHTML=cnt;
 
 }
 
-stop.onclick = function () {
+dec.onclick = function () {
 
-    clearInterval(Environment);
-
-}
-
-reset.onclick = function () {
-    clearInterval(Environment);
-    count.innerHTML = 0;
-    cnt = 0;
-}
-
-
-function startCount() {
-
-    cnt++;
-    count.innerHTML = cnt;
-
+cnt--;
+count.innerHTML=cnt;
 }
 
