@@ -1,5 +1,5 @@
 # Counter
-### This is simple counter for counting. Increment & Decrement :nerd_face:
+### This is a simple counter for counting. Increment & Decrement :nerd_face:
 
 <hr> </hr>
 
