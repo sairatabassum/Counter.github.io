@@ -5,6 +5,8 @@ var inc = document.querySelector(".inc");
 
 var dec = document.querySelector(".dec");
 
+var res =  document.querySelector(".res");
+
 count.innerHTML = localStorage.clickcount;
 
 
@@ -22,7 +24,7 @@ inc.onclick = function () {
         count.innerHTML = localStorage.clickcount;
     }
     else {
-        count.innerHTML = "Your browser does not support web storage";
+        alert("Your browser does not support web storage");
 
     }
 }
@@ -40,8 +42,15 @@ dec.onclick = function () {
         count.innerHTML = localStorage.clickcount;
     }
     else {
-        count.innerHTML = "Your browser does not support web storage";
+        alert("Your browser does not support web storage");
 
     }
 }
 
+res.onclick = function(){
+
+    localStorage.clear();
+    count.innerHTML = 0;
+
+
+}

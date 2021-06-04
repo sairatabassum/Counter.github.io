@@ -95,9 +95,9 @@ body {
 
   }
 
-  Button:hover {background-color: #8f2752}
+  Button:hover {background-color: #d6749d}
   Button:active {
-    background-color: #8f2752;
+    background-color: #c25381;
     box-shadow: 0 4px #666;
     transform: translateY(2px);
   }
