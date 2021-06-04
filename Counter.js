@@ -37,7 +37,7 @@ dec.onclick = function () {
 
         }
         else {
-            localStorage.clickcount = 1;
+            localStorage.clickcount = -1;
         }
         count.innerHTML = localStorage.clickcount;
     }
