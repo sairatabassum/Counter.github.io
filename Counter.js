@@ -5,9 +5,16 @@ var inc = document.querySelector(".inc");
 
 var dec = document.querySelector(".dec");
 
-var res =  document.querySelector(".res");
+var res = document.querySelector(".res");
 
-count.innerHTML = localStorage.clickcount;
+
+
+if (typeof localStorage.clickcount == 'undefined') {
+    count.innerHTML = 0;
+}
+else {
+    count.innerHTML = localStorage.clickcount;
+}
 
 
 
@@ -15,11 +22,16 @@ inc.onclick = function () {
 
 
     if (typeof (Storage) !== "undefined") {
+        
         if (localStorage.clickcount) {
+
             localStorage.clickcount = Number(localStorage.clickcount) + 1;
+
         }
         else {
+
             localStorage.clickcount = 1;
+
         }
         count.innerHTML = localStorage.clickcount;
     }
@@ -32,11 +44,14 @@ inc.onclick = function () {
 dec.onclick = function () {
 
     if (typeof (Storage) !== "undefined") {
+
         if (localStorage.clickcount) {
+
             localStorage.clickcount = Number(localStorage.clickcount) - 1;
 
         }
         else {
+
             localStorage.clickcount = -1;
         }
         count.innerHTML = localStorage.clickcount;
@@ -47,7 +62,7 @@ dec.onclick = function () {
     }
 }
 
-res.onclick = function(){
+res.onclick = function () {
 
     localStorage.clear();
     count.innerHTML = 0;
